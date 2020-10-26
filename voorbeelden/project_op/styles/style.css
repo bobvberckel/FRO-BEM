@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+}
+
+#curly {
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+#checked {
+    color: orange;
+}
+
+@media screen and (min-width: 50em) {
+    ::placeholder {
+        color: black;
+    }
+    
+    :-ms-input-placeholder {
+    color: black;
+    }
+    
+    ::-ms-input-placeholder {
+    color: black;
+    }
+
+    .landing {
+        background-image: url("../images/MAAchtergrond.jpg");
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .landing .landingHeader {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        margin: 7em 5em;
+        padding: 2.5em;
+        font-size: 1.5em;
+        text-shadow: 4px 4px black;
+    }
+
+    .landing .landingButton {
+        margin: 21.5em 9.5em;
+    }
+
+    .landing .landingButton a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5em;
+        border-radius: 24px;
+        padding: 2.5em 5em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #E62686;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: sticky;
+        background-color: black;
+        top: 0;
+    }
+
+    nav img {
+        height: 5em;
+        width: 5em;
+    }
+
+    nav ul {
+        margin-top: 1.8em;
+        grid-column: span 3;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.5em;
+        background-color: #E62686;
+        transition: 0.5s;
+    }
+
+    nav ul li a:hover {
+        background-color: black;
+        color: #E62686;
+        transition: 0.5s;
+    }
+
+    .WelkeOpleiding {
+        padding: 5em 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .WelkeOpleiding h2 {
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.5em 5em;
+        background-color: #E62686;
+        border-radius: 24px 0px 0px 24px;
+        display: inline-block;
+        grid-column: span 2;
+        text-align: center;
+        margin: 0 0 0 auto;
+    }
+
+    .WelkeOpleiding p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.5em 15em 0.5em 0.5em;
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+        grid-column: span 2;
+    }
+
+    .WaaromMA {
+        padding: 5em 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .WaaromMA h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        background-color: #E62686;
+        padding: 0.5em 4.5em;
+    }
+
+    .WaaromMA p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.5em 15em 0.5em 0.5em;
+        grid-column: span 2;
+        background-color: black;
+        color: white;
+        border-radius: 0px 24px 24px 0px;
+    }
+
+    .WatGaJeLeren {
+        padding: 5em 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .WatGaJeLeren h2 {
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.5em 5em;
+        background-color: #E62686;
+        border-radius: 24px 0px 0px 24px;
+        display: inline-block;
+        grid-column: span 2;
+        text-align: center;
+        margin: 0 0 0 auto;
+    }
+
+    .WatGaJeLeren .WatGaJeLerenList {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.5em 15em 0.5em 1.5em;
+        background-color: black;
+        color: white;
+        grid-column: span 2;
+    }
+
+    .WatZeggenDeStudenten {
+        padding-top: 5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .WatZeggenDeStudenten h2 {
+        background-color: #E62686;
+        font-family: 'Montserrat', sans-serif;
+        padding: 1em 3em;
+        grid-column: span 2;
+        margin: 0 auto;
+    }
+
+    .StudentenColums {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .StudentenColums .student1 {
+        grid-column: span 2;
+        background-color: #E62686;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    
+    .StudentenColums .student1 img {
+        margin: 0 auto;
+        width: 40%;
+        height: 40%;
+        display: block;
+    }
+
+    .StudentenColums .student2 {
+        grid-column: span 2;
+        background-color: black;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .StudentenColums .student2 img {
+        margin: 0 auto;
+        display: block;
+        height: 60%;
+        width: 70%;
+    }
+
+    .StudentenColums .student3 {
+        grid-column: span 2;
+        background-color: #E62686;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .StudentenColums .student3 img {
+        display: block;
+        margin: 0 auto;
+        height: 50%;
+        width: 60%;
+    }
+
+    #sterren {
+        vertical-align: bottom;
+    }
+
+    .ContactMA {
+        padding: 5em 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .ContactMA h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        background-color: #E62686;
+        padding: 0.5em 4em;
+    }
+
+    .ContactMA p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.5em 15em 0.5em 0.5em;
+        grid-column: span 2;
+        background-color: black;
+        color: white;
+        border-radius: 0px 24px 24px 0px;
+    }
+
+    .Video {
+        padding: 5em 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Video h2 {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 auto;
+        background-color: #E62686;
+        grid-column: span 2;
+        display: block;
+        padding: 0.5em 5em;
+    }
+    
+    .Video iframe {
+        display: block;
+        grid-column: span 2;
+        margin: 0 auto;
+        box-shadow: 6px 6px black;
+    }
+
+    .Inschrijven {
+        padding: 5em 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: black;
+    }
+
+    .Inschrijven h2 {
+        font-family: 'Montserrat', sans-serif;
+        grid-column: span 2;
+        display: block;
+        margin: 0 auto;
+        color: white;
+    }
+
+    .Inschrijven h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        display: block;
+        margin: 0 auto;
+        grid-column: span 2;
+    }
+
+    .Inschrijven p {
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 1em 0 1em auto;
+    }
+
+    .Inschrijven input {
+        display: inline-block;
+        width: 250px;
+        padding: 7px;
+        border: none;
+        background: #E62686;
+        color: black;
+        border-radius: 24px;
+        margin: 1em 1em;
+    }
+
+    .Inschrijven select {
+        display: inline-block;
+        width: 250px;
+        padding: 7px;
+        border: none;
+        background: #E62686;
+        color: black;
+        margin: 1em 1em;
+    }
+
+    .Inschrijven form {
+        grid-column: span 2;
+    }
+
+    #Span2 {
+        grid-column: span 2;
+        display: block;
+        margin: 2.5em auto;
+    }
+
+    .mobilePhone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    ::placeholder {
+        color: #E62686;
+    }
+    
+    :-ms-input-placeholder {
+    color: #E62686;
+    }
+    
+    ::-ms-input-placeholder {
+    color: #E62686;
+    }
+
+    .landing {
+        background-image: url("../images/MAAchtergrond.jpg");
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .landing .landingHeader {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        margin: 4em 2em;
+        font-size: 1.5em;
+        text-shadow: 4px 4px black;
+    }
+
+    .landing .landingButton {
+        margin: 3em 3em;
+    }
+
+    .landing .landingButton a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5em;
+        border-radius: 24px;
+        padding: 1em 3em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #E62686;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .WelkeOpleiding {
+        background: black;
+        padding: 2em 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .WelkeOpleiding h2 {
+        color: #E62686;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    .WelkeOpleiding p {
+        font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #E62686;
+        margin: 2em
+    }
+
+    .WaaromMA {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #E62686;
+    }
+
+    .WaaromMA h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding: 0.5em 4.5em;
+    }
+
+    .WaaromMA p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 2em;
+        background-color: #E62686;
+    }
+
+    .WatGaJeLeren {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: black;
+    }
+    
+    .WatGaJeLeren h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: #E62686;
+        padding: 0.5em 4.5em;
+    }
+
+    .WatGaJeLeren .WatGaJeLerenList {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: black;
+        color: #E62686;
+        margin: 2em;
+    }
+
+    .WatZeggenDeStudenten {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .WatZeggenDeStudenten h2 {
+        background-color: #E62686;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0.5em 0 2.5em 0;
+        text-align: center;
+    }
+
+    .StudentenColums {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .StudentenColums .student1 {
+        background-color: #E62686;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    
+    .StudentenColums .student1 img {
+        margin: 0 auto;
+        width: 40%;
+        height: 40%;
+        display: block;
+    }
+
+    .StudentenColums .student2 {
+        background-color: black;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .StudentenColums .student2 img {
+        margin: 0 auto;
+        display: block;
+        height: 60%;
+        width: 70%;
+    }
+
+    .StudentenColums .student3 {
+        background-color: #E62686;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .StudentenColums .student3 img {
+        display: block;
+        margin: 0 auto;
+        height: 50%;
+        width: 60%;
+    }
+
+    #sterren {
+        vertical-align: bottom;
+    }
+
+    .ContactMA {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: black;
+        padding-bottom: 0.5em;
+    }
+
+    .ContactMA h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding: 0.5em 4em;
+        color: #E62686;
+    }
+
+    .ContactMA p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #E62686;
+    }
+    
+    .Video {
+        display: none;
+    }
+
+    .Inschrijven {
+        background-color: #E62686;
+    }
+
+    .Inschrijven h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    .Inschrijven h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+
+    .Inschrijven p {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .Inschrijven input {
+        display: block;
+        width: 250px;
+        padding: 7px;
+        border: none;
+        background: black;
+        color: #E62686;
+        border-radius: 24px;
+        margin: 0 auto;
+    }
+
+    .Inschrijven select {
+        display: block;
+        width: 250px;
+        padding: 7px;
+        border: none;
+        background-color: black;
+        color: #E62686;
+        margin: 0 auto;
+    }
+
+    .Inschrijven form {
+        padding: 2em 0;
+    }
+
+    #Span2 {
+        grid-column: span 2;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .mobilePhone {
+        background-color: black;
+        color: #E62686;
+        text-align: center;
+    }
+
+    .mobilePhone h2 {
+        font-family: 'Montserrat', sans-serif;
+        padding: 2.5em 0;
+    }
+
+    .mobilePhone p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 2.5em;
+    }
+}
