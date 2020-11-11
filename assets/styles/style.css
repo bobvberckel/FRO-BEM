@@ -1,48 +1,41 @@
-/* ! INFORMATIE  */
-
-
-/* 
+/*
     Code written by: Bob van Berckel
     Code written on (Start date): 26/10/2020
-    Code style: CSS with BEM 
+    Code style: CSS with BEM
     Code used for: Portfolio style
 */
 
-
-/* * Fonts importeren */
-
-
-/* Google Fonts */
-
-
-/* ?: font-family: 'Sansita Swashed', cursive; */
-
+/* font-family: 'Sansita Swashed', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
 
-/* ?: font-family: 'Roboto', sans-serif; */
-
+/* font-family: 'Roboto', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
 
-/* ?: font-family: 'Noto Sans JP', sans-serif; */
-
+/* font-family: 'Noto Sans JP', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* font-family: 'Nunito', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 /* * Standaard waarden herstellen of instellen. */
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    overflow-x: hidden;
+    font-weight: normal;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-h3 {
-    font-weight: normal;
-    color: white;
-    padding: 0.3em 0;
+::-moz-selection {
+    background: #b7b7b7;
+}
+
+::selection {
+    background: #b7b7b7;
 }
 
 .bold {
@@ -53,8 +46,8 @@ h3 {
     font-style: italic;
 }
 
-.tagg {
-    background-color: lightgray;
+.tag {
+    background-color: #ffa502;
     border-radius: 7px;
     padding: 0.3em;
     margin: 0.1em;
@@ -63,230 +56,369 @@ h3 {
     color: black;
 }
 
-.grid__span2 {
-    grid-column: span 2;
+.disabled {
+    pointer-events: none;
 }
 
-.yellow {
-    color: #FFCA28;
-}
-
-
-/* * Startup animation waardes instellen. De rest wordt gedaan door JavaScript. */
-
-.prelandingpage,
-.landingpage {
-    padding: 10em 0 5em 0;
+/* Splashscreen */
+.splashscreen {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+    ), url("../images/header_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.prelandingpage__header,
-.landingpage__header {
-    font-family: 'Sansita Swashed', cursive;
-    font-size: 5em;
-}
-
-.prelandingpage__secondheader,
-.landingpage__secondheader {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-.landingpage {
-    background-color: #1E1E1E;
-    transition: background-color 1s;
-}
-
-.landingpage__header,
-.landingpage__secondheader {
+.splashscreen__header {
     color: white;
-    transition: color 1s;
+    text-shadow: -3px 3px black;
 }
 
-
-/* * Navigatie bar stylen. */
-
-.nav {
-    position: sticky;
-    top: 0;
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: #333333;
+.splashscreen__undertext {
+    color: white;
+    text-shadow: -3px 3px black;
 }
 
-.nav__links {
-    padding: 0.5em;
+.splashscreen__button {
+    margin-top: 7em;
+    background-color: #F79F1F;
     display: inline-block;
+    padding: 1em;
+    border-radius: 24px;
 }
 
-.nav__links__icon {
-    font-size: 2.5em;
-    color: #436A9B;
-    transition: background-color 1s, color 1s;
-    padding: 0.1em;
-    border-radius: 12px;
-}
-
-.nav__links__icon:hover {
-    font-size: 2.5em;
-    background-color: #436A9B;
+.splashscreen__button a {
     color: white;
-    border-radius: 12px;
-    transition: background-color 1s, color 1s;
-}
-
-.nav__rechts {
-    float: right;
-}
-
-.nav__rechts__list {
-    list-style-type: none;
-}
-
-.nav__rechts__list__link {
     text-decoration: none;
-    color: black;
-    cursor: pointer;
 }
 
-.nav__rechts__list__link__listitem {
-    padding: 1.25em;
-    display: inline-block;
-    transition: background-color 1s;
-    color: #FFCA28;
+/* For every device: */
+nav {
+    width: 100vw;
+    background-color: white;
 }
 
-.nav__rechts__list__link__listitem:hover {
-    background-color: #436A9B;
-    color: white;
-    transition: background-color 1s;
-}
-
-.resume {
-    color: #436A9B;
-    transition: color 1s, background-color 1s;
-}
-
-
-/* * About me stylen. */
-
-.aboutme {
+nav .navigationbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav .navigationbar a {
     text-align: center;
-    background-color: #1E1E1E;
 }
 
-.aboutme__image {
-    padding: 5em 0;
+nav .navigationbar a i {
+    color: #F79F1F;
+    text-shadow: #1B1464 -1px 1px;
 }
 
-.aboutme__image--profilePictureBobvB {
-    width: 50%;
-    height: auto;
-    border-radius: 0 50px 0 50px;
+/* About me */
+.aboutme {
+    width: 100vw;
+    background-color: #f1f2f6;
 }
 
-.aboutme__text {
-    width: 60%;
+.aboutme__image img {
+    border-radius: 0 24px 0 24px;
+    box-shadow: #F79F1F -4px 4px;
+}
+
+.aboutme__text-header {
+    font-family: 'Nunito', sans-serif;
+}
+
+.aboutme__text-text {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* My Skills */
+.myskills {
+    width: 100vw;
+    background-color: white;
+}
+
+.myskills__text-header {
+    font-family: 'Nunito', sans-serif;
+}
+
+.myskills__text-skill {
+    font-family: 'Nunito', sans-serif;
+}
+
+.skill-progress-green h3 {
+    background-color: limegreen;
+}
+
+.skill-progress-orange h3 {
+    background-color: orange;
+}
+
+.skill-progress-red h3 {
+    background-color: red;
+}
+
+.skill-dots {
+    width: 95vw;
     margin: 0 auto;
 }
 
-.aboutme__text--inleiding {
-    margin-top: 9em;
-    text-align: left;
-    color: white;
-    font-family: 'Noto Sans JP', sans-serif;
+.skill-dots p {
+    display: flex;
+    padding-top: 1em;
+    align-items: center;
 }
 
+.skilldot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
 
-/* * Mijn projecten stylen */
+.greendot {
+    background-color: limegreen;
+}
 
+.orangedot {
+    background-color: orange;
+}
+
+.reddot {
+    background-color: red;
+}
+
+/* My Projects */
 .myprojects {
-    padding-top: 4em;
-    background-color: #4E4E50;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 3em;
+    width: 100vw;
+    background-color: #f1f2f6;
+    font-family: 'Nunito', sans-serif;
 }
 
 .myprojects__header {
-    color: #FFCA28;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 5em;
-    margin-top: 3em;
-}
-
-.myprojects__project {
-    margin: 0 auto;
-    width: 50%;
-}
-
-.myprojects__project--header {
-    text-align: center;
-    color: #FFCA28;
-    padding: 1em 0;
-}
-
-.myprojects__project--image {
-    max-width: 400px;
-    max-height: 400px;
-}
-
-.myprojects__project--link {
-    text-decoration: none;
-    color: white;
-    background-color: #436A9B;
-    font-style: 14px;
-    border-radius: 24px;
-    padding: 1em;
-}
-
-.myprojects__soonmore {
-    text-align: center;
-    background-color: #FFCA28;
-    border-radius: 14px;
-    font-size: 24px;
-    margin: 3em 20em;
-}
-
-
-/* * Contact gedeelte */
-
-.contact {
-    background-color: #1E1E1E;
-    padding: 5em;
-}
-
-.contact__header {
-    color: #FFCA28;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-
-.contact__inhoud {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: white;
     margin-top: 5em;
 }
 
-.contact__inhoud__gegevens {
+.myprojects-project__header {
     text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
+    color: #ffa502;
 }
 
-.contact__inhoud__gegevens--link {
-    color: #FFCA28;
-    border-bottom: solid 1px #FFCA28;
-    padding-bottom: 3px;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+.myprojects-project__text h4 a {
+    color: #ffa502;
 }
 
-.contact__inhoud__uitleg {
-    margin: 0 auto;
-    width: 60%;
-    font-family: 'Noto Sans JP', sans-serif;
+.myprojects-project__text-detail {
+    font-weight: bold;
+}
+
+/* Contact */
+.contact {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffa502;
+}
+
+.contact__header {
+    margin-top: 5em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Hiding some elements who only should be displayed on PC. */
+    .hideOnMobile {
+        display: none;
+    }
+
+    /* Splashscreen */
+    .splashscreen__header {
+        margin-top: 15em;
+    }
+
+    .splashscreen__undertext {
+        margin-top: 2em;
+    }
+
+    /* Navigation */
+    nav {
+        position: fixed;
+        top: 0;
+    }
+
+    nav .navigationbar a i {
+        font-size: 6vw;
+        padding: 1em;
+    }
+
+    /* About me */
+    .aboutme {
+        height: 110vh;
+    }
+
+    .aboutme__image {
+        margin-top: 7.5em;
+        text-align: center;
+    }
+
+    .aboutme__image img {
+        height: auto;
+        width: 75vw;
+    }
+
+    .aboutme__text {
+        margin: 4em auto 0 auto;
+        width: 70vw;
+    }
+
+    .aboutme__text-header h2 {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    /* My Skills */
+    .myskills {
+        height: 335vh;
+    }
+
+    .myskills__text-header h2 {
+        margin: 3em 0 0 0;
+        text-align: center;
+    }
+
+    .myskills__text-skill {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .myskills__text-skill h3 {
+        padding: 1em 0;
+        width: 75vw;
+        display: inline-block;
+    }
+
+    .myskills__text-skill p {
+        width: 60vw;
+        margin: 2em auto;
+    }
+
+    .skilldot {
+        padding: 5px;
+    }
+
+    /* My Projects */
+    .myprojects {
+        height: 335vh;
+    }
+
+    .myprojects-project {
+        width: 75vw;
+        margin: 3em auto;
+    }
+
+    .myprojects-project__header {
+        font-size: 20px;
+    }
+
+    .myprojects-project__buttons {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .myprojects-project__buttons a {
+        padding: 1em 0;
+        margin: 1em 0;
+        width: 50vw;
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        background-color: #ffa502;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Hiding some elements who only should be displayed on PC. */
+    .hideOnMobile {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+    }
+
+    nav .navigationbar a i {
+        font-size: 4vw;
+        padding: 0.5em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Hiding some elements who only should be displayed on PC. */
+    .hideOnMobile {
+        display: none;
+    }
+
+    /* Navigation */
+    nav {
+        position: fixed;
+        top: 0;
+    }
+
+    nav .navigationbar a i {
+        font-size: 5vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Hiding some elements who only should be displayed on PC. */
+    .hideOnMobile {
+        display: none;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
+    nav .navigationbar a i {
+        font-size: 3vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Hiding some elements who only should be displayed on mobile. */
+    .hideOnPC {
+        display: none;
+    }
+
+    /* Navigation */
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
+    nav .navigationbar a {
+        transition: background-color 1s, color 1s;
+        color: #fff5bb;
+    }
+
+    nav .navigationbar a:hover {
+        background-color: #9dbcbc;
+        transition: background-color 1s, color 1s;
+    }
+
+    nav .navigationbar a i {
+        font-size: 2vw;
+    }
 }
