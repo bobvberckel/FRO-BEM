@@ -22,12 +22,16 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     font-weight: normal;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+body, html {
+    overflow-y: visible;
 }
 
 ::-moz-selection {
@@ -230,6 +234,7 @@ nav .navigationbar a i {
     font-family: 'Nunito', sans-serif;
     color: white;
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     /* Hiding some elements who only should be displayed on PC. */
@@ -259,11 +264,12 @@ nav .navigationbar a i {
 
     /* About me */
     .aboutme {
-        height: 110vh;
+        height: 100vh;
+        margin-bottom: 5em;
     }
 
     .aboutme__image {
-        margin-top: 7.5em;
+        margin-top: 5vh;
         text-align: center;
     }
 
@@ -273,18 +279,19 @@ nav .navigationbar a i {
     }
 
     .aboutme__text {
-        margin: 4em auto 0 auto;
+        margin: 2vh auto 0 auto;
         width: 70vw;
+        font-size: 2.35vh;
     }
 
     .aboutme__text-header h2 {
         text-align: center;
-        margin-bottom: 2em;
+        margin-bottom: 3vh;
     }
 
     /* My Skills */
     .myskills {
-        height: 335vh;
+        height: 345vh;
     }
 
     .myskills__text-header h2 {
@@ -314,7 +321,7 @@ nav .navigationbar a i {
 
     /* My Projects */
     .myprojects {
-        height: 335vh;
+        height: 345vh;
     }
 
     .myprojects-project {
