@@ -26,12 +26,10 @@
     font-weight: normal;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body, html {
     overflow-y: visible;
+    height: 100%;
+    scroll-behavior: smooth;
 }
 
 ::-moz-selection {
@@ -235,6 +233,29 @@ nav .navigationbar a i {
     color: white;
 }
 
+.contact-info__header {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-align: center;
+    width: 75vw;
+    margin: 2em auto;
+}
+
+.contact-info__text {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    width: 60vw;
+    margin: 2em auto;
+}
+
+.contact-info__text p {
+    margin-top: 2em;
+}
+
+.contact-info__text p a {
+    color: black;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     /* Hiding some elements who only should be displayed on PC. */
@@ -253,7 +274,8 @@ nav .navigationbar a i {
 
     /* Navigation */
     nav {
-        position: fixed;
+        position: sticky;
+        position: -webkit-sticky;
         top: 0;
     }
 
@@ -269,7 +291,7 @@ nav .navigationbar a i {
     }
 
     .aboutme__image {
-        margin-top: 5vh;
+        margin-top: 12vh;
         text-align: center;
     }
 
@@ -346,6 +368,11 @@ nav .navigationbar a i {
         display: inline-block;
         color: white;
         background-color: #ffa502;
+    }
+
+    /* Contact */
+    .contact-info__map {
+        display: none;
     }
 }
 
