@@ -24,9 +24,11 @@
     padding: 0;
     overflow: hidden;
     font-weight: normal;
+    font-family: 'Nunito', sans-serif;
 }
 
-body, html {
+body,
+html {
     overflow-y: visible;
     height: 100%;
     scroll-behavior: smooth;
@@ -68,10 +70,8 @@ body, html {
     height: 100vh;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    background-image: linear-gradient(
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4)
-    ), url("../images/header_image.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url("../images/header_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -102,7 +102,7 @@ body, html {
 /* For every device: */
 nav {
     width: 100vw;
-    background-color: white;
+    background-color: #F1F2F6;
 }
 
 nav .navigationbar {
@@ -165,12 +165,15 @@ nav .navigationbar a i {
 }
 
 .skill-dots {
-    width: 95vw;
+    width: 40vw;
+    text-align: center;
     margin: 0 auto;
+    margin-bottom: 5vh;
 }
 
 .skill-dots p {
     display: flex;
+    font-size: 3vw;
     padding-top: 1em;
     align-items: center;
 }
@@ -202,8 +205,9 @@ nav .navigationbar a i {
 }
 
 .myprojects__header {
+    margin-top: 20vh;
     text-align: center;
-    margin-top: 5em;
+    padding: 2rem;
 }
 
 .myprojects-project__header {
@@ -221,7 +225,6 @@ nav .navigationbar a i {
 
 /* Contact */
 .contact {
-    height: 100vh;
     width: 100vw;
     background-color: #ffa502;
 }
@@ -258,6 +261,7 @@ nav .navigationbar a i {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
     /* Hiding some elements who only should be displayed on PC. */
     .hideOnMobile {
         display: none;
@@ -285,13 +289,8 @@ nav .navigationbar a i {
     }
 
     /* About me */
-    .aboutme {
-        height: 100vh;
-        margin-bottom: 5em;
-    }
-
     .aboutme__image {
-        margin-top: 12vh;
+        margin-top: 20vh;
         text-align: center;
     }
 
@@ -301,23 +300,20 @@ nav .navigationbar a i {
     }
 
     .aboutme__text {
-        margin: 2vh auto 0 auto;
+        margin: 5vh auto;
         width: 70vw;
         font-size: 2.35vh;
     }
 
     .aboutme__text-header h2 {
         text-align: center;
-        margin-bottom: 3vh;
+        padding: 2.5vh 0;
     }
 
     /* My Skills */
-    .myskills {
-        height: 345vh;
-    }
-
     .myskills__text-header h2 {
-        margin: 3em 0 0 0;
+        margin-top: 20vh;
+        font-size: 5vw;
         text-align: center;
     }
 
@@ -342,10 +338,6 @@ nav .navigationbar a i {
     }
 
     /* My Projects */
-    .myprojects {
-        height: 345vh;
-    }
-
     .myprojects-project {
         width: 75vw;
         margin: 3em auto;
@@ -378,6 +370,7 @@ nav .navigationbar a i {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
     /* Hiding some elements who only should be displayed on PC. */
     .hideOnMobile {
         display: none;
@@ -392,10 +385,118 @@ nav .navigationbar a i {
         font-size: 4vw;
         padding: 0.5em;
     }
+
+    /* Splashscreen */
+    .splashscreen__header {
+        margin-top: 7em;
+        font-size: 5vw;
+    }
+
+    .splashscreen__undertext {
+        margin-top: 2em;
+        font-size: 3.5vw;
+    }
+
+    /* Navigation */
+    nav {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+
+    nav .navigationbar a i {
+        font-size: 6vw;
+        padding: 1em;
+    }
+
+    /* About me */
+    .aboutme__image {
+        margin-top: 20vh;
+        text-align: center;
+    }
+
+    .aboutme__image img {
+        height: auto;
+        width: 65vw;
+    }
+
+    .aboutme__text {
+        margin: 5vh auto;
+        width: 70vw;
+        font-size: 2.35vh;
+    }
+
+    .aboutme__text-header h2 {
+        text-align: center;
+        padding: 2.5vh 0;
+    }
+
+    /* My Skills */
+    .myskills__text-header h2 {
+        margin-top: 20vh;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .myskills__text-skill {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .myskills__text-skill h3 {
+        padding: 1em 0;
+        width: 75vw;
+        display: inline-block;
+    }
+
+    .myskills__text-skill p {
+        width: 60vw;
+        margin: 2em auto;
+        font-size: 3vw;
+    }
+
+    .skilldot {
+        padding: 5px;
+    }
+
+    /* My Projects */
+    .myprojects-project {
+        width: 75vw;
+        margin: 3em auto;
+    }
+
+    .myprojects__header {
+        font-size: 3vw;
+    }
+
+    .myprojects-project__header {
+        font-size: 20px;
+    }
+
+    .myprojects-project__buttons {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .myprojects-project__buttons a {
+        padding: 1em 0;
+        margin: 1em 0;
+        width: 50vw;
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        background-color: #ffa502;
+    }
+
+    /* Contact */
+    .contact-info__map {
+        display: none;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
     /* Hiding some elements who only should be displayed on PC. */
     .hideOnMobile {
         display: none;
@@ -410,49 +511,390 @@ nav .navigationbar a i {
     nav .navigationbar a i {
         font-size: 5vw;
     }
+
+    /* Splashscreen */
+    .splashscreen__header {
+        margin-top: 7em;
+        font-size: 5vw;
+    }
+
+    .splashscreen__undertext {
+        margin-top: 2em;
+        font-size: 3.5vw;
+    }
+
+    /* Navigation */
+    nav {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+
+    nav .navigationbar a i {
+        font-size: 6vw;
+        padding: 1em;
+    }
+
+    /* About me */
+    .aboutme__image {
+        margin-top: 20vh;
+        text-align: center;
+    }
+
+    .aboutme__image img {
+        height: auto;
+        width: 65vw;
+    }
+
+    .aboutme__text {
+        margin: 5vh auto;
+        width: 70vw;
+        font-size: 2.35vh;
+    }
+
+    .aboutme__text-header h2 {
+        text-align: center;
+        padding: 2.5vh 0;
+    }
+
+    /* My Skills */
+    .myskills__text-header h2 {
+        margin-top: 20vh;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .myskills__text-skill {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .myskills__text-skill h3 {
+        padding: 1em 0;
+        width: 75vw;
+        display: inline-block;
+    }
+
+    .myskills__text-skill p {
+        width: 60vw;
+        margin: 2em auto;
+        font-size: 3vw;
+    }
+
+    .skilldot {
+        padding: 5px;
+    }
+
+    /* My Projects */
+    .myprojects-project {
+        width: 75vw;
+        margin: 3em auto;
+    }
+
+    .myprojects__header {
+        font-size: 3vw;
+    }
+
+    .myprojects-project__header {
+        font-size: 20px;
+    }
+
+    .myprojects-project__buttons {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .myprojects-project__buttons a {
+        padding: 1em 0;
+        margin: 1em 0;
+        width: 50vw;
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        background-color: #ffa502;
+    }
+
+    /* Contact */
+    .contact-info__map {
+        display: none;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
     /* Hiding some elements who only should be displayed on PC. */
     .hideOnMobile {
         display: none;
     }
 
+    /* Navigation */
     nav {
-        position: sticky;
+        position: fixed;
         top: 0;
     }
 
     nav .navigationbar a i {
         font-size: 3vw;
     }
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    /* Hiding some elements who only should be displayed on mobile. */
-    .hideOnPC {
-        display: none;
+    /* Splashscreen */
+    .splashscreen__header {
+        margin-top: 7em;
+        font-size: 5vw;
+    }
+
+    .splashscreen__undertext {
+        margin-top: 2em;
+        font-size: 3.5vw;
     }
 
     /* Navigation */
     nav {
         position: sticky;
+        position: -webkit-sticky;
         top: 0;
     }
 
-    nav .navigationbar a {
-        transition: background-color 1s, color 1s;
-        color: #fff5bb;
+    nav .navigationbar a i {
+        font-size: 6vw;
+        padding: 1em;
     }
 
-    nav .navigationbar a:hover {
-        background-color: #9dbcbc;
-        transition: background-color 1s, color 1s;
+    /* About me */
+    .aboutme__image {
+        margin-top: 20vh;
+        text-align: center;
+    }
+
+    .aboutme__image img {
+        height: auto;
+        width: 65vw;
+    }
+
+    .aboutme__text {
+        margin: 5vh auto;
+        width: 70vw;
+        font-size: 2.35vh;
+    }
+
+    .aboutme__text-header h2 {
+        text-align: center;
+        padding: 2.5vh 0;
+    }
+
+    /* My Skills */
+    .myskills__text-header h2 {
+        margin-top: 20vh;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .myskills__text-skill {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .myskills__text-skill h3 {
+        padding: 1em 0;
+        width: 75vw;
+        display: inline-block;
+    }
+
+    .myskills__text-skill p {
+        width: 60vw;
+        margin: 2em auto;
+        font-size: 3vw;
+    }
+
+    .skilldot {
+        padding: 5px;
+    }
+
+    /* My Projects */
+    .myprojects-project {
+        width: 75vw;
+        margin: 3em auto;
+    }
+
+    .myprojects__header {
+        font-size: 3vw;
+    }
+
+    .myprojects-project__header {
+        font-size: 20px;
+    }
+
+    .myprojects-project__buttons {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .myprojects-project__buttons a {
+        padding: 1em 0;
+        margin: 1em 0;
+        width: 50vw;
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        background-color: #ffa502;
+    }
+
+    /* Contact */
+    .contact-info__map {
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /* Hiding some elements who only should be displayed on PC. */
+    .hideOnMobile {
+        display: block;
+    }
+
+    /* Splashscreen */
+    .splashscreen__header {
+        margin-top: 6em;
+        font-size: 2vw;
+    }
+
+    .splashscreen__undertext {
+        margin-top: 3em;
+        font-size: 2vw;
+    }
+
+    /* Navigation */
+    nav {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        font-family: 'Nunito', sans-serif;
     }
 
     nav .navigationbar a i {
         font-size: 2vw;
+        padding: 0.5em;
+    }
+
+    nav .navigationbar a i span {
+        padding: 0.5em;
+        font-size: 1vw;
+        color: black;
+        text-shadow: none;
+    }
+
+    /* About me */
+    .aboutme {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
+
+    .aboutme__image {
+        margin-top: 20vh;
+        text-align: center;
+        margin-bottom: 15vh;
+    }
+
+    .aboutme__image {
+        text-align: center;
+    }
+
+    .aboutme__image img {
+        height: auto;
+        width: 25vw;
+    }
+
+    .aboutme__text {
+        margin: 20vh auto;
+        width: 25vw;
+        font-size: 2.35vh;
+    }
+
+    .aboutme__text-header h2 {
+        text-align: center;
+        padding: 2.5vh 0;
+    }
+
+    /* My Skills */
+    .myskills__text-header h2 {
+        margin: 20vh 0;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .myskills__text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .myskills__text-header {
+        grid-column: span 2;
+    }
+
+    .myskills__text-skill {
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .myskills__text-skill h3 {
+        padding: 1em 0;
+        width: 25vw;
+        display: inline-block;
+    }
+
+    .myskills__text-skill p {
+        width: 20vw;
+        margin: 2em auto;
+        font-size: 1vw;
+    }
+
+    .skill-dots {
+        grid-column: span 2;
+    }
+
+    .skilldot {
+        padding: 5px;
+    }
+
+    /* My Projects */
+    .myprojects-projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .myprojects-project {
+        width: 25vw;
+        margin: 3em auto;
+    }
+
+    .myprojects__header {
+        font-size: 2vw;
+        grid-column: span 2;
+    }
+
+    .myprojects-project__header {
+        font-size: 25px;
+    }
+
+    .myprojects-project__buttons {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .myprojects-project__buttons a {
+        padding: 1em 0;
+        margin: 1em 0;
+        width: 10vw;
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+        background-color: #ffa502;
+    }
+
+    #span2 {
+        grid-column: span 2;
     }
 }

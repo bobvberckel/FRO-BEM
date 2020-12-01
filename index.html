@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <meta name="description"
-          content="Hallo, ik ben Bob van Berckel. Een 17 jarige student die een stage zoekt. Meer over mij te weten komen? Bezoek dan mijn website!">
+        content="Hallo, ik ben Bob van Berckel. Een 17 jarige student die een stage zoekt. Meer over mij te weten komen? Bezoek dan mijn website!">
     <link rel="canonical" href="https://www.bobvanberckel.com">
     <!--    <link rel="stylesheet" href="./assets/styles/bootstrap.css">-->
     <link rel="stylesheet" href="./assets/styles/style.css">
@@ -16,245 +16,255 @@
 </head>
 
 <body>
-<div id="top"></div>
+    <div id="top"></div>
 
-<!-- Splashscreen -->
-<div class="splashscreen">
-    <div class="splashscreen__header">
-        <h1>Bob van Berckel</h1>
+    <!-- Splashscreen -->
+    <div class="splashscreen">
+        <div class="splashscreen__header">
+            <h1>Bob van Berckel</h1>
+        </div>
+        <div class="splashscreen__undertext">
+            <h3>Development student en teamleider</h3>
+        </div>
+        <div class="splashscreen__button">
+            <a href="#aboutme">Meer over mij te weten komen?</a>
+        </div>
     </div>
-    <div class="splashscreen__undertext">
-        <h3>Development student en teamleider</h3>
-    </div>
-    <div class="splashscreen__button">
-        <a href="#aboutme">Meer over mij te weten komen?</a>
-    </div>
-</div>
 
-<!-- Navigation Bar -->
-<nav>
-    <div class="navigationbar hideOnPC">
-        <a href="#top"><i class="fas fa-home"></i></a>
-        <a href="#aboutme"><i class="fas fa-user-alt"></i></a>
-        <a href="#myskills"><i class="fas fa-laptop-code"></i></a>
-        <a href="#myprojects"><i class="fas fa-project-diagram"></i></a>
-        <a href="#contact"><i class="fas fa-envelope-open-text"></i></a>
-    </div>
-</nav>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="navigationbar hideOnPC">
+            <a href="#top"><i class="fas fa-home"><span class="hideOnMobile"> Home</span></i></a>
+            <a href="#aboutme"><i class="fas fa-user-alt"><span class="hideOnMobile"> About me</span></i></a>
+            <a href="#myskills"><i class="fas fa-laptop-code"><span class="hideOnMobile"> My Skills</span></i></a>
+            <a href="#myprojects"><i class="fas fa-project-diagram"><span class="hideOnMobile"> My
+                        projects</span></i></a>
+            <a href="#contact"><i class="fas fa-envelope-open-text"><span class="hideOnMobile"> Contact</span></i></a>
+        </div>
+    </nav>
 
-<!-- About me -->
-<div class="aboutme" id="aboutme">
-    <div class="aboutme__image">
-        <img src="./assets/images/photo_bobvanberckel.png" alt="Foto van Bob van Berckel, de developer in kwestie."
-             title="Gefotografeerd door: Hidde Wieringa, te vinden op hiddewieringa_fotografie op instagram.">
-    </div>
-    <div class="aboutme__text">
-        <div class="aboutme__text-header">
-            <h2>Wie ben ik?</h2>
+    <!-- About me -->
+    <div class="aboutme" id="aboutme">
+        <div class="aboutme__image">
+            <img src="./assets/images/photo_bobvanberckel.png" alt="Foto van Bob van Berckel, de developer in kwestie."
+                title="Gefotografeerd door: Hidde Wieringa, te vinden op hiddewieringa_fotografie op instagram.">
         </div>
-        <div class="aboutme__text-text">
-            <p>Mijn naam is Bob van Berckel, ik ben 17 jaar oud en woon in Hilversum. Ik volg de opleiding Media
-                Development (het ontwikkelen van websites en webapplicaties) aan het Media College in Amsterdam. Vanaf
-                mijn 13e jaar ben ik al actief bezig met bijbaantjes. Af en toe doe ik ook al wat kleine online
-                projecten in opdracht.</p>
+        <div class="aboutme__text">
+            <div class="aboutme__text-header">
+                <h2>Wie ben ik?</h2>
+            </div>
+            <div class="aboutme__text-text">
+                <p>Mijn naam is Bob van Berckel, ik ben 17 jaar oud en woon in Hilversum. Ik volg de opleiding Media
+                    Development (het ontwikkelen van websites en webapplicaties) aan het Media College in Amsterdam.
+                    Vanaf
+                    mijn 13e jaar ben ik al actief bezig met bijbaantjes. Af en toe doe ik ook al wat kleine online
+                    projecten in opdracht.</p>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- My Skills -->
-<div class="myskills" id="myskills">
-    <div class="myskills__text">
-        <div class="myskills__text-header">
-            <h2>Wat zijn mijn vaardigheden?</h2>
-        </div>
-        <div class="myskills__text-skill skill-progress-green">
-            <h3>&lt;html&gt;</h3>
-            <p>Ik heb sterke kennis als het aankomt op HTML, het is ook niet heel erg moeilijk. Ik kan er goed mee
-                overweg en heb geen problemen tijdens het schrijven van HTML.</p>
-        </div>
-        <div class="myskills__text-skill skill-progress-green">
-            <h3>.css {
-                }</h3>
-            <p>Bij HTML hoort natuurlijk ook CSS, ik kan juist met CSS overweg gaan. Maar ben niet in staat om
-                daadwerkelijk iets heel moois er van te maken. Daarnaast schrijf ik ontzettend veel code als het aankomt
-                bij CSS, wat soms dubbel op is.</p>
-        </div>
-        <div class="myskills__text-skill skill-progress-orange">
-            <h3>console.log(`Javascript`);</h3>
-            <p>Bij het maken van een website is soms Javascript nodig om met de gebruikerinteractie mogelijk te maken.
-                Ik ben diep in Javascript gedoken en schrijf nette, leesbare code die in meerdere manieren gebruikt
-                wordt. (Helpdesk generator, Discord Bot). Soms gaat het echter wel iets té ver boven mijn hoofd waardoor
-                ik het niet altijd even snel begrijp.</p>
-        </div>
-        <div class="myskills__text-skill skill-progress-orange">
-            <h3>echo "php";</h3>
-            <p>Bij het maken van iets complexere websites is het nodig om PHP te schrijven, ik heb basis kennis van PHP
-                en kan dit op de juiste manier gebruiken bij projecten. Ik ben nu bezig met het leren van OOP PHP code
-                schrijven, waardoor ik mijn eigen geschreven code opnieuw kan gebruiken.</p>
-        </div>
-        <div class="myskills__text-skill skill-progress-red">
-            <h3>print("python")</h3>
-            <p>Momenteel ben ik bezig met het leren van Python, dit wil ik uiteindelijk ook gebruiken in websites
-                (Django). Ik ken de basis, maar heb nog een lange weg te gaan voordat ik kan zeggen dat ik het echt
-                onder de knie heb.</p>
-        </div>
-        <div class="myskills__text-skill skill-progress-green">
-            <h3>Basic design:</h3>
-            <p>Natuurlijk werk ik op school samen met Media Vormgevers, maar toch is het altijd handig om zelf een klein
-                beetje kennis te hebben van foto editing (Photoshop én Illustator) en daarnaast heb ik als hobby video
-                editing, wat soms heel erg handig uit komt tijdens projecten.</p>
-        </div>
-        <div class="myskills__text-skill skill-dots">
-            <p><span class="skilldot greendot"></span>- Juist onder controle.</p>
-            <p><span class="skilldot orangedot"></span>- Basis onder controle.</p>
-            <p><span class="skilldot reddot"></span>- Nog bezig met leren.</p>
+    <!-- My Skills -->
+    <div class="myskills" id="myskills">
+        <div class="myskills__text">
+            <div class="myskills__text-header">
+                <h2>Wat zijn mijn vaardigheden?</h2>
+            </div>
+            <div class="myskills__text-skill skill-progress-green">
+                <h3>&lt;html&gt;</h3>
+                <p>Ik heb sterke kennis als het aankomt op HTML, het is ook niet heel erg moeilijk. Ik kan er goed mee
+                    overweg en heb geen problemen tijdens het schrijven van HTML.</p>
+            </div>
+            <div class="myskills__text-skill skill-progress-green">
+                <h3>.css {
+                    }</h3>
+                <p>Bij HTML hoort natuurlijk ook CSS, ik kan juist met CSS overweg gaan. Maar ben niet in staat om
+                    daadwerkelijk iets heel moois er van te maken. Daarnaast schrijf ik ontzettend veel code als het
+                    aankomt
+                    bij CSS, wat soms dubbel op is.</p>
+            </div>
+            <div class="myskills__text-skill skill-progress-orange">
+                <h3>console.log(`Javascript`);</h3>
+                <p>Bij het maken van een website is soms Javascript nodig om met de gebruikerinteractie mogelijk te
+                    maken.
+                    Ik ben diep in Javascript gedoken en schrijf nette, leesbare code die in meerdere manieren gebruikt
+                    wordt. (Helpdesk generator, Discord Bot). Soms gaat het echter wel iets té ver boven mijn hoofd
+                    waardoor
+                    ik het niet altijd even snel begrijp.</p>
+            </div>
+            <div class="myskills__text-skill skill-progress-orange">
+                <h3>echo "php";</h3>
+                <p>Bij het maken van iets complexere websites is het nodig om PHP te schrijven, ik heb basis kennis van
+                    PHP
+                    en kan dit op de juiste manier gebruiken bij projecten. Ik ben nu bezig met het leren van OOP PHP
+                    code
+                    schrijven, waardoor ik mijn eigen geschreven code opnieuw kan gebruiken.</p>
+            </div>
+            <div class="myskills__text-skill skill-progress-red">
+                <h3>print("python")</h3>
+                <p>Momenteel ben ik bezig met het leren van Python, dit wil ik uiteindelijk ook gebruiken in websites
+                    (Django). Ik ken de basis, maar heb nog een lange weg te gaan voordat ik kan zeggen dat ik het echt
+                    onder de knie heb.</p>
+            </div>
+            <div class="myskills__text-skill skill-progress-green">
+                <h3>Basic design:</h3>
+                <p>Natuurlijk werk ik op school samen met Media Vormgevers, maar toch is het altijd handig om zelf een
+                    klein
+                    beetje kennis te hebben van foto editing (Photoshop én Illustator) en daarnaast heb ik als hobby
+                    video
+                    editing, wat soms heel erg handig uit komt tijdens projecten.</p>
+            </div>
+            <div class="myskills__text-skill skill-dots">
+                <p><span class="skilldot greendot"></span>- Juist onder controle.</p>
+                <p><span class="skilldot orangedot"></span>- Basis onder controle.</p>
+                <p><span class="skilldot reddot"></span>- Nog bezig met leren.</p>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- My Projects -->
-<div class="myprojects" id="myprojects">
-    <div class="myprojects__header">
-        <h2>Aan welke projecten heb ik gewerkt?</h2>
+    <!-- My Projects -->
+    <div class="myprojects" id="myprojects">
+        <div class="myprojects__header">
+            <h2>Aan welke projecten heb ik gewerkt?</h2>
+        </div>
+        <div class="myprojects-projects">
+            <div class="myprojects-project">
+                <!-- 12Move -->
+                <div class="myprojects-project__header">
+                    <h3 class="bold">12Move</h3>
+                </div>
+                <div class="myprojects-project__text">
+                    <h4><span class="myprojects-project__text-detail">Beschrijving:</span> 12move (1-Want 2-To Move) is
+                        gemaakt voor een schoolopdracht. 12move is een webapplicatie waarbij je tijdens de corona tijden
+                        tóch fit kan blijven.</h4>
+                    <h4><span class="myprojects-project__text-detail">Developers:</span> <a href="https://mikeyang.net/"
+                            target="_blank">Mike Yang</a> &
+                        <a href="#top">Bob van Berckel</a></h4>
+                    <h4><span class="myprojects-project__text-detail">Klanten:</span> Saskia Hoogerhuis & Erik Willems
+                        (Media College Amsterdam)</h4>
+                    <h4><span class="myprojects-project__text-detail">Release:</span> September 2020</h4>
+                    <h4><span class="myprojects-project__text-detail">Tags:</span><span class="tag">PHP</span> <span
+                            class="tag">MVC</span> <span class="tag">Schoolopdracht</span></h4>
+                </div>
+                <div class="myprojects-project__buttons">
+                    <a href="https://bobvanberckel.com/PROJ-MVC/" target="_blank">Website bezoeken</a>
+                    <a href="#" target="_blank" class="disabled" title="Nog niet beschikbaar!">GitHub bezoeken</a>
+                </div>
+            </div>
+            <div class="myprojects-project">
+                <!-- Project OP -->
+                <div class="myprojects-project__header">
+                    <h3 class="bold">Project OP</h3>
+                </div>
+                <div class="myprojects-project__text">
+                    <h4><span class="myprojects-project__text-detail">Beschrijving:</span> Project OP is een website
+                        voor
+                        het
+                        Media College Amsterdam waar de opleiding Media Development het onderwerp is.</h4>
+                    <h4><span class="myprojects-project__text-detail">Developers:</span>
+                        <a href="#top">Bob van Berckel</a></h4>
+                    <h4><span class="myprojects-project__text-detail">Klanten:</span> Saskia Hoogerhuis
+                        (Media College Amsterdam)</h4>
+                    <h4><span class="myprojects-project__text-detail">Release:</span> Early 2020</h4>
+                    <h4><span class="myprojects-project__text-detail">Tags:</span><span class="tag">HTML/CSS</span>
+                        <span class="tag">Onepager</span> <span class="tag">Schoolopdracht</span></h4>
+                </div>
+                <div class="myprojects-project__buttons">
+                    <a href="http://29198.hosts2.ma-cloud.nl/bewijzenmap/periode1.2/proj/project_op/"
+                        target="_blank">Website
+                        bezoeken</a>
+                    <a href="#" target="_blank" class="disabled" title="Nog niet beschikbaar!">GitHub bezoeken</a>
+                </div>
+            </div>
+            <div class="myprojects-project">
+                <!-- WeQreate -->
+                <div class="myprojects-project__header">
+                    <h3 class="bold">WeQreate</h3>
+                </div>
+                <div class="myprojects-project__text">
+                    <h4><span class="myprojects-project__text-detail">Beschrijving:</span> WeQreate is een klein
+                        startersbedrijf die
+                        websites maakt voor kleine ondernemingen, van begin tot eind loodst WeQreate de klant door het
+                        bouwproces heen en werken wij samen om het eindresultaat te halen wat de klant in gedachte had.
+                    </h4>
+                    <h4><span class="myprojects-project__text-detail">Developers:</span> <a
+                            href="https://www.firassoekhai.com/" target="_blank">Firas Soekhai</a> &
+                        <a href="#top">Bob van Berckel</a></h4>
+                    <h4><span class="myprojects-project__text-detail">Klanten:</span> WeQreate (Eigen bedrijf)</h4>
+                    <h4><span class="myprojects-project__text-detail">Release:</span> Late 2020</h4>
+                    <h4><span class="myprojects-project__text-detail">Tags:</span><span class="tag">Hosting</span> <span
+                            class="tag">Onepager</span> <span class="tag">WeQreate</span></h4>
+                </div>
+                <div class="myprojects-project__buttons">
+                    <a href="http://weqreate.nl/" target="_blank">Website bezoeken</a>
+                    <a href="#" target="_blank" class="disabled" title="Nog niet beschikbaar!">GitHub bezoeken</a>
+                </div>
+            </div>
+            <div class="myprojects-project">
+                <!-- wijzeramsterdam -->
+                <div class="myprojects-project__header">
+                    <h3 class="bold">wijzer.amsterdam</h3>
+                </div>
+                <div class="myprojects-project__text">
+                    <h4><span class="myprojects-project__text-detail">Beschrijving:</span> wijzer.amsterdam is dé tool
+                        die
+                        voor oudere perfect uitkomt: De website biedt steun aan ouderen die niet soepel met computers
+                        kunnen
+                        werken,
+                        WeQreate heeft in opdracht deze website gemaakt voor de OBA en de gemeente Amsterdam. Wij hebben
+                        ons
+                        tijdens
+                        dit project gefocust op een loket functie, wij hoeften maar een gedeelte op te leveren. De klant
+                        (OBA) zal
+                        zelf verder gaan met de ontwikkeling.</h4>
+                    <h4><span class="myprojects-project__text-detail">Developers:</span> <a
+                            href="https://www.firassoekhai.com/" target="_blank">Firas Soekhai</a> &
+                        <a href="#top">Bob van Berckel</a></h4>
+                    <h4><span class="myprojects-project__text-detail">Klanten:</span> OBA en gemeente Amsterdam</h4>
+                    <h4><span class="myprojects-project__text-detail">Release:</span> November 2020</h4>
+                    <h4><span class="myprojects-project__text-detail">Tags:</span><span class="tag">Front-End</span>
+                        <span class="tag">COVID19</span> <span class="tag">WeQreate</span></h4>
+                </div>
+                <div class="myprojects-project__buttons">
+                    <a href="https://www.bobvanberckel.com/wijzeramsterdam/" target="_blank">Website bezoeken</a>
+                    <a href="#" target="_blank" class="disabled" title="Nog niet beschikbaar!">GitHub bezoeken</a>
+                </div>
+            </div>
+            <div class="myprojects-project" id="span2">
+                <div class="myprojects-project__header">
+                    <h3 class="bold">Meer willen zien?</h3>
+                </div>
+                <div class="myprojects-project__buttons">
+                    <a href="./projects.html" target="_blank">Zie hier al mijn projecten!</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="myprojects-projects">
-        <div class="myprojects-project">
-            <!-- 12Move -->
-            <div class="myprojects-project__header">
-                <h3 class="bold">12Move</h3>
-            </div>
-            <div class="myprojects-project__text">
-                <h4><span class="myprojects-project__text-detail">Beschrijving:</span> 12move (1-Want 2-To Move) is
-                    gemaakt voor een schoolopdracht. 12move is een webapplicatie waarbij je tijdens de corona tijden
-                    tóch fit kan blijven.</h4>
-                <h4><span class="myprojects-project__text-detail">Developers:</span> <a href="https://mikeyang.net/"
-                                                                                        target="_blank">Mike Yang</a> &
-                    <a href="#top">Bob van Berckel</a></h4>
-                <h4><span class="myprojects-project__text-detail">Klanten:</span> Saskia Hoogerhuis & Erik Willems
-                    (Media College Amsterdam)</h4>
-                <h4><span class="myprojects-project__text-detail">Release:</span> September 2020</h4>
-                <h4><span class="myprojects-project__text-detail">Tags:</span><span class="tag">PHP</span> <span
-                        class="tag">MVC</span> <span class="tag">Schoolopdracht</span></h4>
-            </div>
-            <div class="myprojects-project__buttons">
-                <a href="https://bobvanberckel.com/PROJ-MVC/" target="_blank">Website bezoeken</a>
-                <a href="#" target="_blank" class="disabled" title="Nog niet beschikbaar!">GitHub bezoeken</a>
-            </div>
-        </div>
-        <div class="myprojects-project">
-            <!-- Project OP -->
-            <div class="myprojects-project__header">
-                <h3 class="bold">Project OP</h3>
-            </div>
-            <div class="myprojects-project__text">
-                <h4><span class="myprojects-project__text-detail">Beschrijving:</span> Project OP is een website voor
-                    het
-                    Media College Amsterdam waar de opleiding Media Development het onderwerp is.</h4>
-                <h4><span class="myprojects-project__text-detail">Developers:</span>
-                    <a href="#top">Bob van Berckel</a></h4>
-                <h4><span class="myprojects-project__text-detail">Klanten:</span> Saskia Hoogerhuis
-                    (Media College Amsterdam)</h4>
-                <h4><span class="myprojects-project__text-detail">Release:</span> Early 2020</h4>
-                <h4><span class="myprojects-project__text-detail">Tags:</span><span class="tag">HTML/CSS</span> <span
-                        class="tag">Onepager</span> <span class="tag">Schoolopdracht</span></h4>
-            </div>
-            <div class="myprojects-project__buttons">
-                <a href="http://29198.hosts2.ma-cloud.nl/bewijzenmap/periode1.2/proj/project_op/" target="_blank">Website
-                    bezoeken</a>
-                <a href="#" target="_blank" class="disabled" title="Nog niet beschikbaar!">GitHub bezoeken</a>
-            </div>
-        </div>
-        <div class="myprojects-project">
-            <!-- WeQreate -->
-            <div class="myprojects-project__header">
-                <h3 class="bold">WeQreate</h3>
-            </div>
-            <div class="myprojects-project__text">
-                <h4><span class="myprojects-project__text-detail">Beschrijving:</span> WeQreate is een klein
-                    startersbedrijf die
-                    websites maakt voor kleine ondernemingen, van begin tot eind loodst WeQreate de klant door het
-                    bouwproces heen en werken wij samen om het eindresultaat te halen wat de klant in gedachte had.</h4>
-                <h4><span class="myprojects-project__text-detail">Developers:</span> <a
-                        href="https://www.firassoekhai.com/" target="_blank">Firas Soekhai</a> &
-                    <a href="#top">Bob van Berckel</a></h4>
-                <h4><span class="myprojects-project__text-detail">Klanten:</span> WeQreate (Eigen bedrijf)</h4>
-                <h4><span class="myprojects-project__text-detail">Release:</span> Late 2020</h4>
-                <h4><span class="myprojects-project__text-detail">Tags:</span><span class="tag">Hosting</span> <span
-                        class="tag">Onepager</span> <span class="tag">WeQreate</span></h4>
-            </div>
-            <div class="myprojects-project__buttons">
-                <a href="http://weqreate.nl/" target="_blank">Website bezoeken</a>
-                <a href="#" target="_blank" class="disabled" title="Nog niet beschikbaar!">GitHub bezoeken</a>
-            </div>
-        </div>
-        <div class="myprojects-project">
-            <!-- wijzeramsterdam -->
-            <div class="myprojects-project__header">
-                <h3 class="bold">wijzer.amsterdam</h3>
-            </div>
-            <div class="myprojects-project__text">
-                <h4><span class="myprojects-project__text-detail">Beschrijving:</span> wijzer.amsterdam is dé tool die
-                    voor oudere perfect uitkomt: De website biedt steun aan ouderen die niet soepel met computers kunnen
-                    werken,
-                    WeQreate heeft in opdracht deze website gemaakt voor de OBA en de gemeente Amsterdam. Wij hebben ons
-                    tijdens
-                    dit project gefocust op een loket functie, wij hoeften maar een gedeelte op te leveren. De klant
-                    (OBA) zal
-                    zelf verder gaan met de ontwikkeling.</h4>
-                <h4><span class="myprojects-project__text-detail">Developers:</span> <a
-                        href="https://www.firassoekhai.com/" target="_blank">Firas Soekhai</a> &
-                    <a href="#top">Bob van Berckel</a></h4>
-                <h4><span class="myprojects-project__text-detail">Klanten:</span> OBA en gemeente Amsterdam</h4>
-                <h4><span class="myprojects-project__text-detail">Release:</span> November 2020</h4>
-                <h4><span class="myprojects-project__text-detail">Tags:</span><span class="tag">Front-End</span> <span
-                        class="tag">COVID19</span> <span class="tag">WeQreate</span></h4>
-            </div>
-            <div class="myprojects-project__buttons">
-                <a href="https://www.bobvanberckel.com/wijzeramsterdam/" target="_blank">Website bezoeken</a>
-                <a href="#" target="_blank" class="disabled" title="Nog niet beschikbaar!">GitHub bezoeken</a>
-            </div>
-        </div>
-        <div class="myprojects-project">
-            <div class="myprojects-project__header">
-                <h3 class="bold">Meer willen zien?</h3>
-            </div>
-            <div class="myprojects-project__buttons">
-                <a href="./projects.html" class="disabled">Zie hier al mijn projecten!</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Contact -->
-<div class="contact" id="contact">
-    <div class="contact__header">
-        <h2>Contact opnemen? Dat is zeker mogelijk!</h2>
-    </div>
-    <div class="contact-info">
-        <div class="contact-info__header">
-            <h3>U kunt mij te allen tijde contacteren. Bel me gerust of stuur me een mailtje en dan reageer ik daar snel op.</h3>
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <div class="contact__header">
+            <h2>Contact opnemen? Dat is zeker mogelijk!</h2>
         </div>
-        <div class="contact-info__text">
-            <p><span class="bold">TEL:</span> <a href="TEL:+310655408261">06 554 08 261</a>, u kunt mij telefonisch
-                bereiken. Mocht ik niet opnemen, spreek dan de voicemail in of stuur mij een berichtje.</p>
-            <p><span class="bold">MAIL:</span> U kunt mij ook een mailtje sturen, dat kan via <a
-                    href="MAILTO:bob.van.berckel@icloud.com">bob.van.berckel@icloud.com</a>. Ik probeer zo snel mogelijk
-                te reageren op mailtjes.</p>
-            <p><span class="bold">WWW:</span> <a href="https://www.bobvanberckel.com">bob.van.berckel.com</a></p>
+        <div class="contact-info">
+            <div class="contact-info__header">
+                <h3>U kunt mij te allen tijde contacteren. Bel me gerust of stuur me een mailtje en dan reageer ik daar
+                    snel op.</h3>
+            </div>
+            <div class="contact-info__text">
+                <p><span class="bold">TEL:</span> <a href="TEL:+310655408261">06 554 08 261</a>, u kunt mij telefonisch
+                    bereiken. Mocht ik niet opnemen, spreek dan de voicemail in of stuur mij een berichtje.</p>
+                <p><span class="bold">MAIL:</span> U kunt mij ook een mailtje sturen, dat kan via <a
+                        href="MAILTO:bob.van.berckel@icloud.com">bob.van.berckel@icloud.com</a>. Ik probeer zo snel
+                    mogelijk
+                    te reageren op mailtjes.</p>
+                <p><span class="bold">WWW:</span> <a href="https://www.bobvanberckel.com">bob.van.berckel.com</a></p>
 
-            <div class="contact-info__text--business">
-                <p>Voor zakelijke mailtjes: Graag vermelden in onderwerp tab.</p>
+                <div class="contact-info__text--business">
+                    <p>Voor zakelijke mailtjes: Graag vermelden in onderwerp tab.</p>
+                </div>
             </div>
         </div>
-        <div class="contact-info__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.
-853521248021!2d4.854812815786219!3d52.3912056535185!2m3!1f0!2f0!3f0!3m2!
-1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e2884b01807d%3A0x8532e0b56b5881fe!
-2sContactweg+36%2C+1014+AN+Amsterdam!5e0!3m2!1snl!2snl!4v1507126077870" width="600" height="450"
-                    frameborder="0"></iframe>
-        </div>
     </div>
-</div>
 </body>
 
 </html>
